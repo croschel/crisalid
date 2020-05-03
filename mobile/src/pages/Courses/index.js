@@ -11,7 +11,7 @@ function Courses() {
 }
 
 Courses.navigationOptions = {
-  tabBarLabel: 'Courses',
+  tabBarLabel: 'Cursos',
   tabBarIcon: ({ tintColor }) => (
     <Icon name="import-contacts" size={30} color={tintColor} />
   )

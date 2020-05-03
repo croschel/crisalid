@@ -28,13 +28,13 @@ export const TextName = styled.View`
   margin-left: 8px;
 `;
 export const ClientName = styled.Text`
-  color: #F7E000;
+  color: #fff;
   font-weight: bold;
   font-size: 18px;
   margin-bottom:2px;
 `;
 export const ClientPoints = styled.Text`
-  color: ${darken(0.12, "#F7E000")};
+  color: #fff;
   font-size: 14px;
   margin-bottom:2px;
 
@@ -52,13 +52,16 @@ export const LogoutButton = styled(RectButton)`
   background: transparent;
 `;
 
-export const DateExpenses = styled.Text`
+export const DateExpenses = styled(RectButton)`
+  margin: 10px auto 10px 10px;
+  flex-direction: row;
+  align-items: center;
+`;
+
+export const DateText = styled.Text`
+  color: #fff;
+  margin-left: 5px;
   font-size: 18px;
-  font-family: "sans-serif";
-  font-weight: bold;
-  color: ${darken(0.12, "#F7E000")};
-  width: 95%;
-  margin: 10px auto;
 `;
 
 export const Expense = styled.View`
@@ -86,6 +89,6 @@ export const BottomInfo = styled.View`
 
 export const InfoText = styled.Text`
   font-size: 18px;
-  color: ${darken(0.05, "#F7E000")};
+  color: #fff;
   font-family: "sans-serif-thin";
 `;

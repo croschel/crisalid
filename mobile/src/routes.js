@@ -23,10 +23,10 @@ export default (signed = false) =>
           resetOnBlur: true,
           tabBarOptions: {
             keyboardHidesTabBar: false,
-            activeTintColor: '#F7E000',
+            activeTintColor: '#fff',
             inactiveTintColor: 'rgba(100, 100, 100, 0.6)',
             style: {
-              backgroundColor: '#00418C',
+              backgroundColor: '#004C8C',
               height: 60,
               padding: 5,
             }

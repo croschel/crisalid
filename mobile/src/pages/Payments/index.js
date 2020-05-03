@@ -12,7 +12,7 @@ function Payments() {
 }
 
 Payments.navigationOptions = {
-  tabBarLabel: 'Payments',
+  tabBarLabel: 'Pagamentos',
   tabBarIcon: ({ tintColor }) => (
     <Icon name="monetization-on" size={30} color={tintColor} />
   )

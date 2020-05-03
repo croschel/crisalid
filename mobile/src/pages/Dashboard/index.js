@@ -1,12 +1,12 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { StatusBar, Text } from 'react-native';
 import { withNavigationFocus } from 'react-navigation';
 import Background from '~/components/Background';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import {
   Container, Header, LeftHeader, Avatar, TextName, ClientRate,
   ClientName, ClientPoints, RightHeader, LogoutButton, Expense, TopInfo,
-  BottomInfo, InfoText, DateExpenses
+  BottomInfo, InfoText, DateExpenses, DateText
 } from './styles';
 
 function Dashboard() {
@@ -14,6 +14,7 @@ function Dashboard() {
 
   return (
     <Background>
+      <StatusBar barStyle="light-content" backgroundColor="#00418C" />
       <Container>
         <Header>
           <LeftHeader>
@@ -27,10 +28,14 @@ function Dashboard() {
           <RightHeader>
             <LogoutButton onPress={handleLogout}>
               <Icon name="exit-to-app" size={45} color="#610000" />
+              <Text style={{ color: '#610000', marginLeft: 10 }}>Sair</Text>
             </LogoutButton>
           </RightHeader>
         </Header>
-        <DateExpenses>últimas 24h</DateExpenses>
+        <DateExpenses>
+          <Icon name="event" size={30} color="#FFF" />
+          <DateText>últimas 24h</DateText>
+        </DateExpenses>
         <Expense style={{ elevation: 7 }}>
           <TopInfo>
             <InfoText>R$ 30,00</InfoText>

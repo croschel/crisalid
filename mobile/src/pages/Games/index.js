@@ -11,7 +11,7 @@ function Games() {
 }
 
 Games.navigationOptions = {
-  tabBarLabel: 'Games',
+  tabBarLabel: 'Jogos',
   tabBarIcon: ({ tintColor }) => (
     <Icon name="videogame-asset" size={30} color={tintColor} />
   )
