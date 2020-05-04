@@ -90,5 +90,5 @@ export const BottomInfo = styled.View`
 export const InfoText = styled.Text`
   font-size: 18px;
   color: #fff;
-  font-family: "sans-serif-thin";
+  font-family: "serif";
 `;
