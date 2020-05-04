@@ -9,15 +9,15 @@ import {
   DetailsButton, AddButton
 } from './styles';
 
-function Payments() {
+function Payments({ navigation }) {
   return (
     <Background>
-      <Header
+      {/* <Header
         centerComponent={{ text: "PAGAMENTOS", style: { fontFamily: "serif", color: '#fff', fontSize: 18, marginBottom: 20 } }}
         containerStyle={{ marginBottom: 20, backgroundColor: '#00418C', borderBottomWidth: 0, height: 70 }}
-      />
+      /> */}
       <Container>
-        <DetailsButton onPress={() => { }}>
+        <DetailsButton onPress={() => navigation.navigate('PaymentsMade')}>
           <PaymentBox style={{ elevation: 10 }}>
             <PaymentText>Pagamentos Efetuados</PaymentText>
             <Payment>
@@ -44,10 +44,17 @@ function Payments() {
 }
 
 Payments.navigationOptions = {
-  tabBarLabel: 'Pagamentos',
-  tabBarIcon: ({ tintColor }) => (
-    <Icon name="monetization-on" size={30} color={tintColor} />
-  )
+  title: 'PAGAMENTOS',
+  headerTintColor: "#FFF",
+  headerTitleAlign: "center",
+  headerStyle: {
+    backgroundColor: '#00418C',
+    elevation: 0,
+  },
+  headerTitleStyle: {
+    fontWeight: 'bold',
+
+  }
 }
 
 export default withNavigationFocus(Payments);

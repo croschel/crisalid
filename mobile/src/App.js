@@ -7,7 +7,7 @@ import Background from '~/components/Background';
 
 export default function App() {
   // const signed = useSelector(state => state.auth.signed)
-  const signed = false;
+  const signed = true;
   const Routes = createRoutes(signed);
   return (
     <Background>
