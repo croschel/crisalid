@@ -26,7 +26,7 @@ function Payments({ navigation }) {
             </Payment>
           </PaymentBox>
         </DetailsButton>
-        <DetailsButton onPress={() => { }}>
+        <DetailsButton onPress={() => navigation.navigate('PaymentsScheduled')}>
           <PaymentBox style={{ elevation: 10 }}>
             <PaymentText>Pagamentos Agendados</PaymentText>
             <Payment>

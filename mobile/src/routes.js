@@ -7,6 +7,7 @@ import SignIn from '~/pages/SignIn';
 import Dashboard from '~/pages/Dashboard';
 import Payments from '~/pages/Payments';
 import PaymentsMade from '~/pages/Payments/PaymentsMade';
+import PaymentsScheduled from '~/pages/Payments/PaymentsScheduled';
 import Games from '~/pages/Games';
 import Courses from '~/pages/Courses';
 
@@ -22,13 +23,13 @@ export default (signed = false) =>
         Payments: {
           screen: createStackNavigator({
             Payments,
-            PaymentsMade
+            PaymentsMade,
+            PaymentsScheduled
           },
             {
               defaultNavigationOptions: {
 
                 headerLeftContainerStyle: {
-                  marginLeft: 10,
                   alignContent: 'center',
                 }
               }

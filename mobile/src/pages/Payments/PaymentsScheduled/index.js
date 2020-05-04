@@ -1,10 +1,10 @@
 import React from 'react';
 import { View } from 'react-native';
 import Background from '~/components/Background';
-
 import { Container, HeaderBox, Points, LabelPoints, PaymentBox, LeftBox, TextInfo } from './styles';
 
-export default function PaymentsMade() {
+
+export default function PaymentsScheduled() {
   return (
     <Background>
       <Container>
@@ -24,8 +24,8 @@ export default function PaymentsMade() {
   );
 }
 
-PaymentsMade.navigationOptions = {
-  title: "Pagamentos Efetuados",
+PaymentsScheduled.navigationOptions = {
+  title: "Pagamentos Agendados",
   headerTintColor: "#fff",
   headerTitleAlign: "center",
   headerStyle: {
@@ -33,3 +33,4 @@ PaymentsMade.navigationOptions = {
     elevation: 0
   }
 }
+
