@@ -3,6 +3,7 @@ import { darken } from 'polished';
 
 export const Container = styled.View`
   flex: 1;
+  margin-top: 15px;
 `;
 
 export const CourseBox = styled.TouchableOpacity`

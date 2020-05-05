@@ -12,10 +12,6 @@ import {
 function Payments({ navigation }) {
   return (
     <Background>
-      {/* <Header
-        centerComponent={{ text: "PAGAMENTOS", style: { fontFamily: "serif", color: '#fff', fontSize: 18, marginBottom: 20 } }}
-        containerStyle={{ marginBottom: 20, backgroundColor: '#00418C', borderBottomWidth: 0, height: 70 }}
-      /> */}
       <Container>
         <DetailsButton onPress={() => navigation.navigate('PaymentsMade')}>
           <PaymentBox style={{ elevation: 10 }}>

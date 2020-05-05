@@ -4,13 +4,26 @@ export function signInRequest(email, password) {
     payload: { email, password },
   };
 }
-// This part will depend of backend @tupy
+
 export function signInSuccess(token, client) {
   return {
     type: '@auth/SIGN_IN_SUCCESS',
     payload: { token, client },
   };
 }
+export function signUpRequest(name, email, password, confirmPassword) {
+  return {
+    type: '@auth/SIGN_UP_REQUEST',
+    payload: { name, email, password, confirmPassword },
+  };
+}
+
+export function signUpSuccess() {
+  return {
+    type: '@auth/SIGN_UP_SUCCESS',
+  };
+}
+
 
 export function signFailure() {
   return {

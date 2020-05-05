@@ -1,21 +1,23 @@
 import styled from 'styled-components/native';
-import { RectButton } from 'react-native-gesture-handler';
 
-export const Container = styled.SafeAreaView`
+export const Container = styled.KeyboardAvoidingView`
   flex: 1;
   justify-content: center;
   align-items: center;
   padding: 0 30px;
 `;
+
 export const HText = styled.Text`
   font-size: 38px;
   font-weight: bold;
   color: #fff;
   font-family: 'serif';
 `;
+
+
 export const Form = styled.View`
   align-self: stretch;
-  margin-top: 10px;
+  margin-top: 20px;
 `;
 
 export const FormInput = styled.TextInput`
@@ -28,7 +30,7 @@ export const FormInput = styled.TextInput`
   align-items: center;
 `;
 
-export const SubmitButton = styled(RectButton)`
+export const SubmitButton = styled.TouchableOpacity`
   height: 46px;
   background: #3bbfff;
   border-radius: 4px;
@@ -48,3 +50,4 @@ export const SignLinkText = styled.Text`
   justify-content: center;
   align-self: center;
 `;
+

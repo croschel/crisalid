@@ -6,8 +6,8 @@ import Background from '~/components/Background';
 // import { Container } from './styles';
 
 export default function App() {
-  // const signed = useSelector(state => state.auth.signed)
-  const signed = true;
+  const signed = useSelector(state => state.auth.signed)
+
   const Routes = createRoutes(signed);
   return (
     <Background>

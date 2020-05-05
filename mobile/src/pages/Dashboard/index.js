@@ -1,8 +1,10 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { StatusBar, Text } from 'react-native';
 import { withNavigationFocus } from 'react-navigation';
 import Background from '~/components/Background';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import { signOut } from '~/store/modules/auth/actions';
 import {
   Container, Header, LeftHeader, Avatar, TextName, ClientRate,
   ClientName, ClientPoints, RightHeader, LogoutButton, Expense, TopInfo,
@@ -10,7 +12,17 @@ import {
 } from './styles';
 
 function Dashboard() {
-  function handleLogout() { }
+  // Dispatch for Redux
+  const dispatch = useDispatch();
+
+  // Select State from Redux
+  const client = useSelector(state => state.client.profile);
+
+  // Logout
+  function handleLogout() {
+    dispatch(signOut());
+
+  }
 
   return (
     <Background>
@@ -20,7 +32,7 @@ function Dashboard() {
           <LeftHeader>
             <Avatar source={{ uri: "https://api.adorable.io/avatars/100/crisalid.png" }} />
             <TextName>
-              <ClientName>Caique Roschel</ClientName>
+              <ClientName>{client.name}</ClientName>
               <ClientPoints>16522pts</ClientPoints>
               <ClientRate>★★☆☆☆</ClientRate>
             </TextName>
